@@ -7,7 +7,7 @@
  *
  * @author MONOSRIJA
  */
-package com.mycompany.electricity.billing.system.project;
+
 
 import javax.swing.*;
 
@@ -365,7 +365,7 @@ public class BillingScreen extends javax.swing.JFrame {
             customerID=cust.getText();
             billNumber=bill.getText();
             unitsConsumed=Integer.parseInt(unit.getText());
-            if(unitsConsumed>500)
+            if(unitsConsumed<500)
             {
                 chargeAsPerUnit=1.00;
             }else if(unitsConsumed>500 && unitsConsumed<600)
